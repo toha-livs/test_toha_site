@@ -5,6 +5,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 import hello.views
+import note.views
 
 # Examples:
 # url(r'^$', 'gettingstarted.views.home', name='home'),
@@ -14,4 +15,5 @@ urlpatterns = [
     url(r'^$', hello.views.index, name='index'),
     url(r'^db', hello.views.db, name='db'),
     path('admin/', admin.site.urls),
+    path('', note.views.home, name='home'),
 ]

@@ -1,0 +1,13 @@
+.head {
+    margin-top: 50px;
+    width: 40%;
+    margin-left: 30%;
+}
+.posters {
+    width: 50%;
+    margin-left: 25%;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
