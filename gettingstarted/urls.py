@@ -16,4 +16,5 @@ urlpatterns = [
     url(r'^db', hello.views.db, name='db'),
     path('admin/', admin.site.urls),
     path('home/', note.views.home, name='home'),
+    path('api_test/', views.snippet_list, name='list'),
 ]

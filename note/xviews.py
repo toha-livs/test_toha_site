@@ -37,3 +37,10 @@ def get_list_posts(queryset):
     newlist = sorted(query_list, key=itemgetter('unique_count'))
     newlist.reverse()
     return newlist
+
+
+def get_for_api(list_dict):
+    all = []
+    for i in list_dict:
+        all.append(i['body'])
+    return all
