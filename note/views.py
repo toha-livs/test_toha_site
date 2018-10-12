@@ -34,9 +34,7 @@ def snippet_list(request, format=None):
         return Response(context)
 
     elif request.method == 'POST':
-        text = request.POST.get('body')
-        print(dir(request))
-        confirm_text = Posts(body=text)
+        confirm_text = Posts(body=request.data['data']['body'])
         confirm_text.save()
         context = {'status': 'success', 'text': 'Your message is confirm!'}
         return Response(context)
