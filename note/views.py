@@ -11,6 +11,8 @@ from rest_framework.renderers import JSONRenderer
 
 def home(request):
     if request.method == "GET":
+        post = Posts.objects.get(id=2)
+        post.delete()
         posts = Posts.objects.values()
         context = {'posts': xviews.get_list_posts(posts)}
         return render(request, 'home.html', context)
