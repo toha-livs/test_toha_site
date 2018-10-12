@@ -16,9 +16,5 @@ urlpatterns = [
     url(r'^db', hello.views.db, name='db'),
     path('admin/', admin.site.urls),
     path('home/', note.views.home, name='home'),
-<<<<<<< HEAD
     path('api_test/', note.views.snippet_list, name='list'),
-=======
-    path('api_test/', views.snippet_list, name='list'),
->>>>>>> 0e04f7b5a60caef8395d70ab84e5ba4dec71ef51
 ]
